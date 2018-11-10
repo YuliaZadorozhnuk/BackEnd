@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="NewPersistenceUnit">
+        <mapping-file>bsuir/model/CityEntity.xml</mapping-file>
+        <mapping-file>bsuir/model/DistanceEntity.xml</mapping-file>
+        <mapping-file>bsuir/model/DriverEntity.xml</mapping-file>
+        <mapping-file>bsuir/model/EntryRequisitionEntity.xml</mapping-file>
+        <mapping-file>bsuir/model/RequisitionEntity.xml</mapping-file>
+        <mapping-file>bsuir/model/SourceEntity.xml</mapping-file>
+        <mapping-file>bsuir/model/UserEntity.xml</mapping-file>
+        <class>bsuir.model.CityEntity</class>
+        <class>bsuir.model.DistanceEntity</class>
+        <class>bsuir.model.DriverEntity</class>
+        <class>bsuir.model.EntryRequisitionEntity</class>
+        <class>bsuir.model.RequisitionEntity</class>
+        <class>bsuir.model.SourceEntity</class>
+        <class>bsuir.model.UserEntity</class>
+        <properties>
+            <property name="toplink.jdbc.url" value="jdbc:mysql://localhost:3308/logistic"/>
+            <property name="toplink.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3308/logistic"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="openjpa.ConnectionURL" value="jdbc:mysql://localhost:3308/logistic"/>
+            <property name="openjpa.ConnectionDriverName" value="com.mysql.jdbc.Driver"/>
+            <property name="eclipselink.jdbc.url" value="jdbc:mysql://localhost:3308/logistic"/>
+            <property name="eclipselink.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+        </properties>
+    </persistence-unit>
+</persistence>
